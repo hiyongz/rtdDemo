@@ -1,6 +1,13 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+import sphinx_rtd_theme
+
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 project = 'Lumache'
 copyright = '2021, Graziella'
@@ -17,6 +24,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'recommonmark',
+    'sphinx_markdown_tables',
 ]
 
 intersphinx_mapping = {
