@@ -1,13 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
-import os
-import sys
-sys.path.insert(0, os.path.abspath('.'))
 
-import sphinx_rtd_theme
-
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 project = 'Lumache'
 copyright = '2021, Graziella'
@@ -42,3 +36,16 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Options for PDF output
+latex_engine = 'xelatex'
+latex_use_xindy = False
+latex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+}
+
+source_parsers = {
+    '.md': 'recommonmark.parser.CommonMarkParser',
+}
+
+source_suffix = ['.rst', '.md']

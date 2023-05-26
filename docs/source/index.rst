@@ -9,6 +9,10 @@
 
    testframework/pytest-install-and-running.md
 
-
-
+  
+   
 关注公众号【测试开发小记】及时接收最新技术文章！
+
+.. image:: /img/wechat.png
+   :scale: 20%
+   :align: center
