@@ -7,7 +7,7 @@
    :maxdepth: 1
    :caption: 自动化测试框架
 
-   testframework/pytest-install-and-running.md
+   testframework/pytest-install-and-running
 
   
    
